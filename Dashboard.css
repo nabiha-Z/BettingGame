@@ -155,7 +155,7 @@ html { height: 100%;
 
 .nav-item .nav-link{
     display:block;
-    color:white;
+    color: white !important;;
 	  text-transform:capitalize;
     text-decoration: none;
     padding:6px 10px; 
@@ -586,6 +586,24 @@ padding:10px;
 }
 
 
+#circledIcon {
+  background-color: rgb(211, 27, 27);
+  border-radius: 50%;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0px 2px 8px 5px rgb(228, 195, 195);
+  margin-bottom: 20px;
+}
+
+.bottomline {
+  background-color: rgb(211, 27, 27);
+  width: 70px;
+  height: 3px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
 
 .navbar-nav li:hover{
 	background-color:rgba(203, 212, 255, 0.6);
@@ -708,25 +726,153 @@ button:hover {
    padding:20px;
  }
 
+ Header{
+	
+  height:700px;
+	background-image:url('images/background2.png'); 
+	background-size:cover;
+  margin-bottom: 50px;
+}
 
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color:white;
-  font-size: 35px;
+#Fixed-NavBar{
+	position:fixed;
+	background-color:none;
+	transition: 0.8s;
+	padding:10px;
+	top:-5px;
+	width:100%;	
+}
+
+#logo{
+
+  width:90px;
+  height:90px;	
+	padding:5px;
+	margin-left:150px;
+	transition: 0.8s;	
+}
+
+#list-inline{
+   list-style-type: none;
+   margin: auto;
+   margin-top:20px;
+}
+
+#list-inline li {
+  display:inline-block!important;
+}
+
+li.navigation{
+	display:inline;
+	padding-right: 20px;
+	font-size:14px;
+	font-style:bold;
+	letter-spacing:1px;
+  color: white;
+}
+
+li.navigation .active{
+	color:#10345e;
+	
+}
+
+li.navigation a{
+  color: white;
+  font-weight: 600;
+}
+
+li.navigation a:hover{
+  color: rgb(19, 122, 170);
+}
+
+.caption{
+  position:relative;
+  color:rgb(50, 50, 51);
+}
+
+.caption h1{
+ font-size:50px;
+ font-weight:bold;
+ letter-spacing:1px;
+ text-decoration:bold;
+}
+.caption p{
+ font-size:20px;
+ color:#525253;	
+}
+
+.headerImg{
+  width: '100%';
+  height: auto;
+  position: relative;
+  
+}
+#nav-btn{
+ 
+  
+  background-color: rgb(58, 184, 125);
+  padding: 5px;
+  border-radius: 10px;
+  width: '90%';
+}
+
+.aboutbtn{
+  display:inline;
+	padding-right: 20px;
+	font-size:14px;
+	font-style:bold;
+	letter-spacing:1px;
+  color: white;
+  background-color: rgb(103, 194, 151);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+}
+
+.aboutbtn a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+} 
+
+.how-it-works{
+	
+	background-color:white;
+	border-radius:15px;
+	padding:40px;
+	color:grey;
+	
+}
+.section-title h3{	
+	font-size:40px;
+	font-style:bold;
+	color:rgb(52, 52, 53); 	
+  margin-bottom: 30px;
+}
+.section-title p{
+	font-size:16px;
+	margin-bottom: 30px;
+}
+
+.section-title a{	
+	font-size:13px;
+	font-weight: bold;
+	color:rgb(122, 122, 228); 	
+  margin-bottom: 30px;	
+  text-decoration: none ;
+}
+
+.textheading{
+  font-size: 13px;
+  color:rgb(61, 61, 63);
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+.boxtext{
+  margin-top: 13px;
+  font-size: 10px;
+  color:rgb(142, 142, 145);
 }
 
 @-webkit-keyframes animatezoom {
@@ -740,7 +886,12 @@ button:hover {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media only screen and (max-width: 1000px) {
+  Header{
+    margin-bottom: 150px;
+  }
+}
+@media only screen and (max-width: 700px) {
   span.Pass {
      display: block;
      float: none;
@@ -748,82 +899,14 @@ button:hover {
   .cancelbtn {
      width: 100%;
   }
+
+  Header{
+    margin-bottom: 300px;
+  }
+
 }
 
-.submenu-box ul li a{
-    color:gray!important;
-    text-transform: capitalize;
-    font-size: 14px;
-	  padding:10px 10px 10px 20px!important;
-    display: block;
-    font-weight: 400;
-    position: relative;
-    z-index: 2;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: .2px;
-}
 
-.submenu-box ul li a{
- padding:4px 10px 4px 20px!important;
-  color:#c1c1c1!important;
-}
 
-.dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-   transition: 0.9s ease;
- 
-}
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-   transition: 0.9s ease;
-}
 
-.position-relative {
-    position: relative!important;
-}
-
-.navbar-expand .navbar-nav .dropdown-menu {
-    position: absolute;
-}
-.navbar-nav .dropdown-menu {
-    box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,.05);
-}
-.navbar-nav .dropdown-menu {
-    position: static;
-    float: none;
-}
-.dropdown-menu-lg {
-    min-width: 20rem;
-}
-.nav-item .indicator {
-    background:#E44836;
-    box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,.05);
-    border-radius: 50%;
-    display: block;
-    height: 18px;
-    width: 18px;
-    padding: 1px;
-    position: absolute;
-    top: 0;
-    right: -8px;
-    text-align: center;
-    transition: top .1s ease-out;
-    font-size: .675rem;
-    color: #fff;
-}
 
