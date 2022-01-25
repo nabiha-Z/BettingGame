@@ -45,6 +45,7 @@ html { height: 100%;
   
   
 } */
+
 #collapse-menu{
 	
 	background-color:#10b3be ;
@@ -594,12 +595,8 @@ padding:10px;
 
 
 #circledIcon {
-  background-color: rgb(211, 27, 27);
-  border-radius: 50%;
-  padding: 20px;
-  color: white;
-  font-size: 20px;
-  box-shadow: 0px 2px 8px 5px rgb(228, 195, 195);
+  width: 40%;
+  height: auto;
   margin-bottom: 20px;
 }
 
@@ -735,8 +732,8 @@ button:hover {
 
  Header{
 	
-  height:700px;
-	background-image:url('images/background2.png'); 
+  height:auto;
+	background-image:url('Assets/landing/Mask-Group\ 1.png'); 
 	background-size:cover;
   margin-bottom: 50px;
 }
@@ -794,24 +791,30 @@ li.navigation a:hover{
 
 .caption{
   position:relative;
-  color:rgb(50, 50, 51);
+  width: 420px;
+  margin-top: 30px;
+  margin-left: 170px;
+  flex-wrap: wrap;
 }
 
 .caption h1{
- font-size:50px;
- font-weight:bold;
+ font-size:40px;
  letter-spacing:1px;
  text-decoration:bold;
+ color:rgb(81, 81, 82);
+ font-weight: bold;
 }
 .caption p{
- font-size:20px;
+ font-size:17px;
  color:#525253;	
 }
 
 .headerImg{
-  width: '100%';
-  height: auto;
+  width: 400px; 
+  height: 400px;
   position: relative;
+  margin-left: 20px;
+  margin-top: 40px;
   
 }
 #nav-btn{
@@ -823,7 +826,12 @@ li.navigation a:hover{
   width: '90%';
 }
 
-.aboutbtn{
+
+#nav-btn a:hover{
+  color:rgb(114, 196, 175)
+}
+
+.signupbtn{
   display:inline;
 	padding-right: 20px;
 	font-size:14px;
@@ -835,26 +843,40 @@ li.navigation a:hover{
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 10px;
+  margin-top: 30px;
 }
 
-.aboutbtn a{
+.signupbtn a{
   text-decoration: none;
   color: white;
   font-weight: 600;
 } 
 
-.how-it-works{
+.signupbtn:hover {
+  background-color:  rgb(75, 156, 118);
+  cursor: pointer;
+  color: white;
+}
+
+
+.signupbtn a:hover {
+  color: white;
+} 
+
+
+.section-title{
 	
 	background-color:white;
 	border-radius:15px;
-	padding:40px;
+	padding:20px;
 	color:grey;
-	
+  margin-left: 200px;
+  width: 75%;
 }
 .section-title h3{	
-	font-size:40px;
-	font-style:bold;
-	color:rgb(52, 52, 53); 	
+	font-size:35px;
+  font-weight: bold;
+	color:rgb(67, 67, 68); 	
   margin-bottom: 30px;
 }
 .section-title p{
@@ -869,7 +891,6 @@ li.navigation a:hover{
   margin-bottom: 30px;	
   text-decoration: none ;
 }
-
 .textheading{
   font-size: 13px;
   color:rgb(61, 61, 63);
@@ -878,8 +899,14 @@ li.navigation a:hover{
 
 .boxtext{
   margin-top: 13px;
-  font-size: 10px;
+  font-size: 13px;
   color:rgb(142, 142, 145);
+}
+
+#roundIcons{
+  margin-top: 50px;
+  margin-left: 90px;
+  width: 50%;
 }
 
 @-webkit-keyframes animatezoom {
@@ -895,7 +922,11 @@ li.navigation a:hover{
 /* Change styles for span and cancel button on extra small screens */
 @media only screen and (max-width: 1000px) {
   Header{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+  }
+  #roundIcons{
+    justify-content: flex-start;
+    margin-left: -20px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -908,8 +939,35 @@ li.navigation a:hover{
   }
 
   Header{
-    margin-bottom: 300px;
+    margin-bottom: 50px;
   }
+  .caption{
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .headerImg{
+    margin-left: 0px;
+  }
+  #logo{
+    margin-left: 40px;
+  }
+  .section-title{
+    margin-left: 0px;
+  }
+  #roundIcons{
+    margin-left: 20px;
+    width: 100%;
+  }
+  #circledIcon{
+    
+  width: 20%;
+  height: auto;
+  margin-bottom: 20px;
+  }
+  .boxtext{
+    width: 50%;
+  }
+ 
 
 }
 
