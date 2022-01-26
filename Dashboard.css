@@ -813,8 +813,8 @@ li.navigation a:hover{
 }
 
 .headerImg{
-  width: 400px; 
-  height: 400px;
+  width: 420px; 
+  height: 420px;
   position: relative;
   margin-left: 20px;
   margin-top: 40px;
@@ -923,6 +923,16 @@ li.navigation a:hover{
 }
 
 /* Change styles for span and cancel button on extra small screens */
+/* @media only screen and (max-width: 2000px) {
+.headerImg{
+  width: 220px; 
+  height: 220px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+  
+} */
 @media only screen and (max-width: 1000px) {
   Header{
     margin-bottom: 100px;
