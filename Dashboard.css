@@ -958,6 +958,10 @@ li.navigation a:hover{
   .boxtext{
     width: 70%;
   }
+  .colText{
+    line-height: 25px;
+  }
+  
 }
 @media only screen and (max-width: 900px) {
 
@@ -1003,6 +1007,9 @@ li.navigation a:hover{
   }
   .boxtext{
     width: 50%;
+  }
+  .colText{
+    line-height: 20px;
   }
  
 
